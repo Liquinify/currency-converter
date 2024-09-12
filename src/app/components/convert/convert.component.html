@@ -1,0 +1,40 @@
+<main>
+  <div class="container">
+    <section class="section">
+      <select
+        class="select"
+        [(ngModel)]="firstCurrency"
+        (ngModelChange)="updateSecondCurrency()"
+      >
+        <option value="USD" class="option">USD</option>
+        <option value="EUR" class="option">EUR</option>
+        <option value="UAH" class="option">UAH</option>
+      </select>
+      <input
+        min="1"
+        class="input"
+        type="number"
+        [(ngModel)]="firstAmount"
+        (ngModelChange)="updateSecondCurrency()"
+      />
+    </section>
+    <section class="section">
+      <select
+        class="select"
+        [(ngModel)]="secondCurrency"
+        (ngModelChange)="updateFirstCurrency()"
+      >
+        <option value="USD" class="option">USD</option>
+        <option value="EUR" class="option">EUR</option>
+        <option value="UAH" class="option">UAH</option>
+      </select>
+      <input
+        min="1"
+        class="input"
+        type="number"
+        [(ngModel)]="secondAmount"
+        (ngModelChange)="updateFirstCurrency()"
+      />
+    </section>
+  </div>
+</main>

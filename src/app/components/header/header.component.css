@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 3rem;
+  padding-inline: 2rem;
+  height: 5rem;
+  flex-direction: row;
+}
+
+.section {
+  display: flex;
+  gap: 10rem;
+}

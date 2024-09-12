@@ -1,0 +1,10 @@
+<header class="navbar">
+  <h1>Currency Converter</h1>
+  <section class="section">
+    <p>1 USD <span>=</span> {{ currencies.UAH }} UAH</p>
+    <p>
+      1 EUR <span>=</span>
+      {{ (currencies.UAH / currencies.EUR).toFixed(3) }} UAH
+    </p>
+  </section>
+</header>
